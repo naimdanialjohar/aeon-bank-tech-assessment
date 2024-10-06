@@ -1,0 +1,97 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	background-color: #333;
+	padding: 1rem;
+	position: relative;
+}
+
+.navbarItems {
+	gap: 0.5rem;
+}
+
+.navbarIcons {
+	margin-left: auto;
+}
+
+.hamburgerIcon,
+.crossIcon {
+	display: none;
+}
+
+.searchIcon {
+	display: none;
+}
+
+.navbarItems a {
+	margin: 0.5rem;
+}
+
+@media (max-width: 780px) {
+	.navbar {
+		padding: 0;
+	}
+
+	.hamburgerIcon {
+		display: block;
+
+		&.hide {
+			display: none;
+		}
+	}
+
+	.crossIcon {
+		display: none;
+
+		&.show {
+			display: block;
+		}
+	}
+
+	.searchIcon {
+		display: block;
+		cursor: pointer;
+	}
+
+	.navbarIcons {
+		display: flex;
+		align-self: flex-start;
+		justify-content: flex-end;
+		flex-grow: 1;
+		gap: 1rem;
+		padding: 0.5rem;
+
+		.icons {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			padding: 0.5rem;
+		}
+	}
+
+	.searchBar {
+		display: none;
+
+		&.show {
+			display: block;
+		}
+	}
+
+	.navbarItems a {
+		display: block;
+		margin: 0;
+	}
+
+	.navbarItems a:first-child {
+		padding: 1rem;
+	}
+
+	.navbarItems a:not(:first-child) {
+		display: none;
+	}
+
+	.navbarItems.show a:not(:first-child) {
+		display: block;
+		padding: 1rem;
+	}
+}
