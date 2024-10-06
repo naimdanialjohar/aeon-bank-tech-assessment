@@ -1,0 +1,10 @@
+.mcq {
+	list-style-position: inside;
+	padding: 1rem;
+}
+
+.mcq li {
+	padding-left: 1rem;
+	text-indent: -1rem;
+	margin-bottom: 0.5rem;
+}
